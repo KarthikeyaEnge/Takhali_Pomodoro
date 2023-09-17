@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Krona+One&family=Poppins:wght@300;400;500&family=Sora:wght@300;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-sora-600 {
+  font-family: 'sora', sans-serif;
+  font-weight: 600;
+}
+
+.font-sora-700 {
+  font-family: 'sora', sans-serif;
+  font-weight: 700;
+}
+
+.font-sora-500 {
+  font-family: 'sora', sans-serif;
+  font-weight: 500;
+}
+
+.font-poppins-500 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+}
+
+.tabactive {
+  background-color: rgba(3, 208, 208, 0.387);
+}
