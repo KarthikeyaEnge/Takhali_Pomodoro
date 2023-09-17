@@ -2,4 +2,4 @@
 
 ![img](/Takahli.png)
 
-> Got any issues/ new ideas just send a PR, there are always invited
+> Got any issues/ new ideas just send a PR, they are always invited
