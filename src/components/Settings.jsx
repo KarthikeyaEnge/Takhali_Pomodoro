@@ -39,7 +39,7 @@ const Settings = () => {
             <input
               type="number"
               name="pomodoro_time"
-              min={0}
+              min={25}
               max={60}
               className="input w-full"
               value={pomodorotime}
@@ -53,7 +53,7 @@ const Settings = () => {
             <input
               type="number"
               name="short_time"
-              min={5}
+              min={1}
               max={25}
               className="input w-full"
               value={shorttime}

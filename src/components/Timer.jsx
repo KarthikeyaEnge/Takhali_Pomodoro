@@ -21,7 +21,7 @@ const Timer = ({ timelimit, timetype }) => {
     sec: seconds,
     tlimit: totalsec,
     timerstart,
-  } = useTimer(timelimit, key);
+  } = useTimer(timelimit, timetype);
 
   useEffect(() => {
     setShowtime(

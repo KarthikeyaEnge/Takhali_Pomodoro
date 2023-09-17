@@ -34,7 +34,7 @@ const useTimer = (time, timetype) => {
     if (tlimit === 0) {
       clearInterval(intervelid);
 
-      if (timetype == "pomodoro") {
+      if (timetype === "pomodoro") {
         const curr = localStorage.getItem(`${year}_${month}_${months[month]}`);
         localStorage.setItem(
           `${year}_${month}_${months[month]}`,
