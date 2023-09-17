@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-const useTimer = (time) => {
+const useTimer = (time, timetype) => {
   const [tlimit, setTlimit] = useState(time * 60);
   const [minu, setMinu] = useState(parseInt(tlimit / 60));
   const [sec, setSec] = useState(parseInt(tlimit % 60));
@@ -33,11 +33,14 @@ const useTimer = (time) => {
     setSec(parseInt(tlimit % 60));
     if (tlimit === 0) {
       clearInterval(intervelid);
-      const curr = localStorage.getItem(`${year}_${month}_${months[month]}`);
-      localStorage.setItem(
-        `${year}_${month}_${months[month]}`,
-        parseInt(curr) + 1
-      );
+
+      if (timetype == "pomodoro") {
+        const curr = localStorage.getItem(`${year}_${month}_${months[month]}`);
+        localStorage.setItem(
+          `${year}_${month}_${months[month]}`,
+          parseInt(curr) + 1
+        );
+      }
     }
   }, [tlimit]);
 
